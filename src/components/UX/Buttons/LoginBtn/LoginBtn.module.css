@@ -1,0 +1,14 @@
+.button {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 90px;
+  align-self: flex-end;
+  background-color: #333;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #000000;
+}
