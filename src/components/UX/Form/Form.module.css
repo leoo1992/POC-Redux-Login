@@ -4,4 +4,9 @@
   justify-content: space-between;
   width: 270px;
   gap: 5px;
+  margin-top: .5rem;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid #bbb;
+  background-color: #f1fbff
 }

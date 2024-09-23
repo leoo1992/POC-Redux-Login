@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 Input.propTypes = {
   id: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
   type: PropTypes.string,
   value: PropTypes.string.isRequired,
   setValue: PropTypes.func.isRequired,
@@ -12,7 +12,7 @@ Input.propTypes = {
 export default function Input({
   id,
   type = "text",
-  placeholder,
+  placeholder= "",
   value,
   setValue,
 }) {
