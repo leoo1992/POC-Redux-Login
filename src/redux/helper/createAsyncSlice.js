@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import PropTypes from "prop-types";
 
 /**
  * CRIA UM SLICE COM UMA FUNCAO ASSINCRONA
- * @param {Object} config 
- * @param {String} config.name 
- * @param {Object} config.initialState 
- * @param {Object} config.reducers 
- * @param {Function} config.fetchConfig 
+ * @param {Object} config
+ * @param {String} config.name
+ * @param {Object} config.initialState
+ * @param {Object} config.reducers
+ * @param {Function} config.fetchConfig
  */
 
 const createAsyncSlice = (config) => {
@@ -59,6 +59,15 @@ const createAsyncSlice = (config) => {
   };
 
   return { ...slice, asyncAction };
+};
+
+createAsyncSlice.propTypes = {
+  config: {
+    name: PropTypes.string.isRequired,
+    initialState: PropTypes.object,
+    reducers: PropTypes.object,
+    fetchConfig: PropTypes.func,
+  },
 };
 
 export default createAsyncSlice;

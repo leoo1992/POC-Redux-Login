@@ -7,6 +7,9 @@ const token = createAsyncSlice({
     data: getLocalStorage("token"),
   },
   reducers: {
+    removeToken(state) {
+      state.data = null;
+    },
     fetchSucess: {
       reducer(state, action) {
         state.loading = false;

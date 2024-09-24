@@ -7,13 +7,14 @@ LogoutBtn.propTypes = {
   type: PropTypes.string,
 };
 
-export default function LogoutBtn({
-  type = "button",
-  text,
-  func,
-}) {
+export default function LogoutBtn({ type = "button", text, func }) {
   return (
-    <button type={type} onClick={func} className={styles.logoutButton}>
+    <button
+      aria-label="logout"
+      type={type}
+      onClick={func}
+      className={styles.logoutButton}
+    >
       {text}
     </button>
   );
