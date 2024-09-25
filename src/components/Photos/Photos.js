@@ -15,15 +15,8 @@ const Photos = () => {
     dispatch(loadNewPhotos(1));
   }, [dispatch]);
 
-  const renderContent = () => {
-    if (data) {
-      return <PhotosContent />;
-    }
-    return <span>Sem fotos</span>;
-  };
-
   const renderFooter = () => {
-    if (!infinite && !loading) {
+    if (!infinite) {
       return (
         <div className={styles.endPhotos}>
           <span>Sem mais fotos</span>
@@ -41,7 +34,7 @@ const Photos = () => {
 
   return (
     <section className={styles.container}>
-      {renderContent()}
+      <PhotosContent />
       {renderFooter()}
     </section>
   );
