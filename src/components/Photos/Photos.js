@@ -14,10 +14,16 @@ const Photos = () => {
     dispatch(loadNewPhotos(1));
   }, [dispatch]);
 
-  return (  
+  return (
     <section className={styles.container}>
       {data ? <PhotosContent /> : <span>Sem fotos</span>}
-      {infinite? <AddPhotosBtn text="+" />: <span>Sem mais fotos <ResetPhotosBtn text="Reset"/></span>}
+      {infinite ? (
+        <AddPhotosBtn text="+" />
+      ) : (
+        <div className={styles.endPhotos}>
+          <span>Sem mais fotos</span> <ResetPhotosBtn text="Reset" />
+        </div>
+      )}
     </section>
   );
 };

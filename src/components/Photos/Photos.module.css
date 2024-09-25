@@ -6,7 +6,7 @@
   align-items:center;
   box-sizing: border-box;
   gap: 1rem;
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 .list {
@@ -47,4 +47,13 @@
   font-family: monospace;
   font-size: 0.8rem;
   color: #999;
+}
+
+.endPhotos{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem 0 2rem 0;
 }
