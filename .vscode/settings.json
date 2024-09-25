@@ -6,5 +6,9 @@
        ".gitignore": true, 
        "README.md": true, 
        "public": true, 
+    //    "src/index.js": true, 
+       "src/App.js": true, 
+    //    "src/global.css": true, 
+
     }
 }

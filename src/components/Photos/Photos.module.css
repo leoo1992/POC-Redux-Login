@@ -1,38 +1,50 @@
-.container{
-    width: 300px ;
+.container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  box-sizing: border-box;
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
-.list{
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 300px;
+  box-sizing: border-box;
 }
 
-.item{
-    display: grid;
-    grid-template-columns: 50px 1fr auto ;
-    grid-template-rows: 50px;
-    align-items:center;
-    gap: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-    padding: 1rem;
+.item {
+  display: grid;
+  grid-template-columns: 50px 1fr auto;
+  grid-template-rows: 50px;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
 }
 
-.img{
-    max-width: 100%;
-    border-radius: 4px;
+.img {
+  max-width: 100%;
+  border-radius: 4px;
 }
 
 .title {
-    font-size: 1rem;
-    font-weight: normal;
-    margin: 0px;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0px;
 }
 
-.acessos{
-    font-family: monospace;
-    font-size: .8rem;
-    color: #999
+.acessos {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #999;
 }

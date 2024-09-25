@@ -1,6 +1,5 @@
 .button {
-  margin-top: 1.5rem;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 10px;
   border: none;
   align-self: flex-end;
@@ -9,6 +8,7 @@
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
+  font-family: Roboto, sans-serif;
 }
 
 .button:hover {

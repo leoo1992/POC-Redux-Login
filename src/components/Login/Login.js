@@ -11,8 +11,6 @@ const Login = () => {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
   const dispatch = useDispatch();
-  const token = useSelector((state) => state.login.token);
-  const user = useSelector((state) => state.login.user);
 
     React.useEffect(() => {
       dispatch(autoLogin());
